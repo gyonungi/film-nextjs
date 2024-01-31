@@ -1,0 +1,173 @@
+@import './variables.scss';
+.container {
+	margin-left: auto;
+	max-width: 1670px;
+	padding-left: 106px;
+}
+.card__h1 {
+	color: $white-color;
+	/* Text TV/H1 */
+	font-family: TT Norms Pro;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 24px;
+}
+.pageh2 {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-color: blue;
+	-webkit-text-stroke-width: 2px;
+	font-family: TT Norms Pro;
+	font-size: 52px;
+	font-style: italic;
+	font-weight: 900;
+	line-height: normal;
+}
+.foot_card {
+	gap: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	&_item {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		align-content: center;
+		flex-wrap: nowrap;
+	}
+	&_p {
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-color: blue;
+		-webkit-text-stroke-width: 2px;
+		font-family: Archivo;
+		font-size: 360px;
+		font-style: italic;
+		font-weight: 900;
+		line-height: normal;
+	}
+}
+.header {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 95px;
+	&__text {
+		color: $white-color;
+		text-align: center;
+
+		/* Text TV/h1 */
+		font-family: TT Norms Pro;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+}
+.heda {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	justify-content: flex-start;
+	position: absolute;
+	width: 886px;
+	height: 101px;
+	top: 278px;
+	left: 485px;
+	gap: 36px;
+}
+
+.Btn {
+	gap: 24px;
+
+	&__watch {
+		margin-right: 24px;
+		color: $white-color;
+		text-align: center;
+
+		/* Button TV/30 */
+		font-family: TT Norms Pro;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 243px;
+		height: 80px;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		flex: 1 0 0;
+		border-radius: 16px;
+		background: var(
+			--gradient-white-50,
+			linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 0.1) 0%,
+				rgba(255, 255, 255, 0.13) 50%,
+				rgba(255, 255, 255, 0.1) 100%
+			)
+		);
+		&:hover {
+			background: var(
+				--Gradient-Accent,
+				linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)
+			);
+		}
+	}
+
+	&__about {
+		color: $white-color;
+		text-align: center;
+
+		/* Button TV/30 */
+		font-family: TT Norms Pro;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 243px;
+		height: 80px;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		flex: 1 0 0;
+		border-radius: 16px;
+		background: var(
+			--gradient-white-50,
+			linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 0.1) 0%,
+				rgba(255, 255, 255, 0.13) 50%,
+				rgba(255, 255, 255, 0.1) 100%
+			)
+		);
+		/* bg blur 20 */
+		backdrop-filter: blur(10px);
+		&:hover {
+			background: var(
+				--Gradient-Accent,
+				linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)
+			);
+		}
+	}
+}
+.main__card {
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 28px;
+	margin-bottom: 110px;
+}
+.foot {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
+	flex-wrap: nowrap;
+	gap: 20px;
+}

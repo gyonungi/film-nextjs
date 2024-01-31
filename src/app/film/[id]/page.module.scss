@@ -1,0 +1,311 @@
+@import '/src/app/variables.scss';
+.container {
+	margin-left: auto;
+	max-width: 1670px;
+	padding-left: 106px;
+}
+.header {
+	display: flex;
+	justify-content: flex-end;
+}
+.heda {
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: flex-start;
+	justify-content: center;
+	position: absolute;
+	gap: 32px;
+	top: 180px;
+	left: 145px;
+	flex-direction: column;
+	width: 735px;
+	height: 332px;
+	padding-left: 106px;
+	&__title {
+		color: $white-color;
+		font-family: TT Norms Pro;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: normal;
+		width: 735px;
+		text-align: start;
+	}
+}
+.header__text {
+	color: $white-color;
+	font-family: TT Norms Pro;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	width: 735px;
+	text-align: start;
+}
+.Btn {
+	gap: 16px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	&__watch {
+		margin-right: 24px;
+		color: $white-color;
+		text-align: center;
+
+		/* Button TV/30 */
+		font-family: TT Norms Pro;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 201px;
+		height: 80px;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		flex: 1 0 0;
+		border-radius: 16px;
+		background: var(
+			--gradient-white-50,
+			linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 0.1) 0%,
+				rgba(255, 255, 255, 0.13) 50%,
+				rgba(255, 255, 255, 0.1) 100%
+			)
+		);
+		&:hover {
+			background: var(
+				--Gradient-Accent,
+				linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)
+			);
+		}
+	}
+
+	&__about {
+		color: $white-color;
+		text-align: center;
+
+		/* Button TV/30 */
+		font-family: TT Norms Pro;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 184px;
+		height: 80px;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		flex: 1 0 0;
+		border-radius: 16px;
+		background: var(
+			--gradient-white-50,
+			linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 0.1) 0%,
+				rgba(255, 255, 255, 0.13) 50%,
+				rgba(255, 255, 255, 0.1) 100%
+			)
+		);
+		/* bg blur 20 */
+		backdrop-filter: blur(10px);
+		&:hover {
+			background: var(
+				--Gradient-Accent,
+				linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)
+			);
+		}
+	}
+	&__icon {
+		width: 96px;
+		height: 80px;
+		border-radius: 16px;
+		background: var(
+			--gradient-white-50,
+			linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 0.1) 0%,
+				rgba(255, 255, 255, 0.13) 50%,
+				rgba(255, 255, 255, 0.1) 100%
+			)
+		);
+		/* bg blur 20 */
+		backdrop-filter: blur(10px);
+		&:hover {
+			background: var(
+				--Gradient-Accent,
+				linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)
+			);
+		}
+	}
+}
+.film {
+	&__title {
+		color: $white-color;
+		/* Text TV/H1 */
+		font-family: TT Norms Pro;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		margin-bottom: 24px;
+	}
+	&__heda {
+		display: flex;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: baseline;
+		gap: 32px;
+	}
+	&__header {
+		&__raiting {
+			color: $white-color;
+			text-align: center;
+			/* Text TV/h5 */
+			font-family: TT Norms Pro;
+			font-size: 28px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			width: 75px;
+			height: 48px;
+			padding: 14px 22px 12px 22px;
+			border-radius: 12px;
+			background: var(--main-white-20, rgba(255, 255, 255, 0.2));
+		}
+		&__text {
+			color: $white-color;
+
+			/* Text TV/b3 */
+			font-family: TT Norms Pro;
+			font-size: 28px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+	&__season {
+		display: flex;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: flex-start;
+		align-items: stretch;
+		gap: 44px;
+		&_card {
+			margin-bottom: $gapText;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 24px;
+		}
+		ul {
+			display: flex;
+			gap: 20px;
+
+			list-style-type: none;
+
+			li {
+				width: 40px;
+				height: 40px;
+				padding: 6px 3px;
+				border-radius: 100px;
+				background: var(--Main-Gray-dark, #232326);
+				color: var(--Main-Gray, #bababa);
+				text-align: center;
+				font-family: TT Norms Pro;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: 0.1px;
+				&:hover {
+					background: $white-color;
+					color: var(--Main-Black, #09090c);
+				}
+			}
+		}
+	}
+	&__descrip {
+		margin-bottom: $gapText;
+		&__icon {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+		}
+		&__whiteText {
+			color: $white-color;
+			/* Text TV/b2 */
+			font-family: TT Norms Pro;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			margin-bottom: 24px;
+		}
+		&__blackText {
+			color: var(--Main-Gray-Medium, #4b4b4b);
+			/* Text TV/b3 */
+			font-family: TT Norms Pro;
+			font-size: 28px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+	&__similar {
+		display: flex;
+		align-content: center;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+		gap: 24px;
+		margin-bottom: $gapText;
+	}
+	&__footer {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		&__item {
+			display: grid;
+			grid-template-columns: repeat(3, 317px);
+			gap: 100px;
+			&__blackText {
+				color: var(--Main-Gray-Medium, #4b4b4b);
+				/* Text TV/b3 */
+				font-family: TT Norms Pro;
+				font-size: 28px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin-bottom: 16px;
+			}
+			&__whiteText {
+				color: $white-color;
+				/* Text TV/b3 */
+				font-family: TT Norms Pro;
+				font-size: 28px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+.card__h1 {
+	color: $white-color;
+	/* Text TV/H1 */
+	font-family: TT Norms Pro;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 24px;
+}

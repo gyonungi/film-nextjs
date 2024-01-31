@@ -1,0 +1,32 @@
+@import '/src/app/variables.scss';
+
+.sidebar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 145px;
+	height: 100%;
+	margin-left: 55px;
+	background-color: $black-color;
+	&__logo {
+		margin-bottom: 110px;
+	}
+}
+.links {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	gap: 28px;
+	.link__arrow {
+		margin-top: 280px;
+		border: 0;
+		background: 0;
+	}
+}
+.panel-item {
+	margin-bottom: 10px;
+}

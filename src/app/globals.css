@@ -1,0 +1,13 @@
+:root {
+	--accent-red: 223;
+	--accent-green: 208;
+	--accent-blue: 165;
+}
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #09090c;
+}
